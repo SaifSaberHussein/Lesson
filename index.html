@@ -31,7 +31,7 @@
 </head>
 <body>
   <div class="lesson-box">
-    <h2>Random Lesson</h2>
+    <h2>Lesson</h2>
     <p id="lesson">Loading...</p>
   </div>
 
@@ -40,8 +40,8 @@ fetch("https://script.google.com/macros/s/AKfycbzPdLUyQJl51HKnOE279_JmTSCW4pfgUW
   .then(response => response.json())
   .then(data => {
     document.getElementById("lesson").innerHTML = `
-      <strong>Category:</strong> ${data.category}<br>
-      ${data.lesson}
+      ${data.lesson}<br><strong>Category:</strong> ${data.category}
+      
     `;
   })
   .catch(err => {
