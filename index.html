@@ -45,7 +45,7 @@
             .then(response => response.json())
             .then(data => {
                 document.getElementById("lesson").innerHTML = `
-<span style="font-size: 1.5rem;">${data.lesson}</span><br>
+<span style="font-size: 1.5rem;">${data.lesson}</span><br><br>
 <span style="font-size: 1rem;"><strong>Category:</strong> ${data.category}</span>
 `;
 })
