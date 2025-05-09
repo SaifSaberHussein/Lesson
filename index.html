@@ -40,8 +40,8 @@ fetch("https://script.google.com/macros/s/AKfycbzPdLUyQJl51HKnOE279_JmTSCW4pfgUW
   .then(response => response.json())
   .then(data => {
 document.getElementById("lesson").innerHTML = `
-  <span style="font-size: 2rem;>${data.lesson}<br></span>
-  <span style="font-size: 0.9rem;><strong>Category:</strong> ${data.category}</span>
+  <span style="font-size: 2rem;">${data.lesson}<br></span>
+  <span style="font-size: 0.9rem;"><strong>Category:</strong> ${data.category}</span>
 `;
       
     `;
